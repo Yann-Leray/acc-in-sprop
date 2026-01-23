@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<title>AccInSProp.theories.SetModel.HO_univ</title>
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+</div>
+
+<div id="main">
+
+<h1 class="libtitle">AccInSProp.theories.SetModel.HO_univ</h1>
+
+<div class="code">
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="AccInSProp.theories.SetModel.library.html#"><span class="id" title="library">library</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#"><span class="id" title="library">ZF_axioms</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#"><span class="id" title="library">ZF_library</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_nat.html#"><span class="id" title="library">ZF_nat</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="AccInSProp.theories.SetModel.HO.html#"><span class="id" title="library">HO</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Definition</span> <a id="univTy_HO" class="idref" href="#univTy_HO"><span class="id" title="definition">univTy_HO</span></a> (<a id="n:1" class="idref" href="#n:1"><span class="id" title="binder">n</span></a> : <a class="idref" href="http://rocq-prover.org/doc/V9.2+alpha/stdlib//Corelib.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a>) : <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#ZFSet"><span class="id" title="axiom">ZFSet</span></a> <a class="idref" href="http://rocq-prover.org/doc/V9.2+alpha/stdlib//Corelib.Init.Notations.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#ZFSet"><span class="id" title="axiom">ZFSet</span></a> := <span class="id" title="keyword">fun</span> <span class="id" title="var">_</span> ⇒ <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#4cfb73737d358b21427ce2afa79874e3"><span class="id" title="notation">⟨</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO.html#a653974a5ab70e391e2244168af7f482"><span class="id" title="definition">𝕌</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#n:1"><span class="id" title="variable">n</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#4cfb73737d358b21427ce2afa79874e3"><span class="id" title="notation">;</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#4cfb73737d358b21427ce2afa79874e3"><span class="id" title="notation">⟨</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_nat.html#ZFthree"><span class="id" title="definition">ZFthree</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#4cfb73737d358b21427ce2afa79874e3"><span class="id" title="notation">;</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#1dc2cb66c5ede645202bae131cc6745c"><span class="id" title="notation">∅</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#4cfb73737d358b21427ce2afa79874e3"><span class="id" title="notation">⟩</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#4cfb73737d358b21427ce2afa79874e3"><span class="id" title="notation">⟩</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Lemma</span> <a id="univTy_HO_typing" class="idref" href="#univTy_HO_typing"><span class="id" title="lemma">univTy_HO_typing</span></a> {<a id="n:2" class="idref" href="#n:2"><span class="id" title="binder">n</span></a> : <a class="idref" href="http://rocq-prover.org/doc/V9.2+alpha/stdlib//Corelib.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a>} {<a id="55485d85e29df2faa6748490a2d4cd13" class="idref" href="#55485d85e29df2faa6748490a2d4cd13"><span class="id" title="binder">Γ</span></a> : <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#ZFSet"><span class="id" title="axiom">ZFSet</span></a>} : <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#28a7e6d0bef392d8ad66262c7aa86565"><span class="id" title="notation">∀</span></a> <a id="3bba16d9494c640e61f3a4c91ca586e3" class="idref" href="#3bba16d9494c640e61f3a4c91ca586e3"><span class="id" title="binder">γ</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#28a7e6d0bef392d8ad66262c7aa86565"><span class="id" title="notation">∈</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#55485d85e29df2faa6748490a2d4cd13"><span class="id" title="variable">Γ</span></a><a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#28a7e6d0bef392d8ad66262c7aa86565"><span class="id" title="notation">,</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#univTy_HO"><span class="id" title="definition">univTy_HO</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#n:2"><span class="id" title="variable">n</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#3bba16d9494c640e61f3a4c91ca586e3"><span class="id" title="variable">γ</span></a> <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#b018a66e1e5f3a3e69df51e53be82ded"><span class="id" title="notation">∈</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO.html#a653974a5ab70e391e2244168af7f482"><span class="id" title="definition">𝕌</span></a> (<a class="idref" href="http://rocq-prover.org/doc/V9.2+alpha/stdlib//Corelib.Init.Datatypes.html#S"><span class="id" title="constructor">S</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#n:2"><span class="id" title="variable">n</span></a>).<br/>
+<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">γ</span> <span class="id" title="var">Hγ</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#setMkPair_typing"><span class="id" title="lemma">setMkPair_typing</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.HO.html#49c9ea64be61500085f4350a637dd55e"><span class="id" title="lemma">𝕌</span></a><a class="idref" href="AccInSProp.theories.SetModel.HO.html#49c9ea64be61500085f4350a637dd55e"><span class="id" title="lemma">_in_</span></a><a class="idref" href="AccInSProp.theories.SetModel.HO.html#49c9ea64be61500085f4350a637dd55e"><span class="id" title="lemma">𝕍</span></a>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#setMkPair_typing"><span class="id" title="lemma">setMkPair_typing</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_nat.html#three_typing"><span class="id" title="lemma">three_typing</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#empty_in_univ"><span class="id" title="lemma">empty_in_univ</span></a>.<br/>
+<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Lemma</span> <a id="el_univTy" class="idref" href="#el_univTy"><span class="id" title="lemma">el_univTy</span></a> {<a id="n:5" class="idref" href="#n:5"><span class="id" title="binder">n</span></a> : <a class="idref" href="http://rocq-prover.org/doc/V9.2+alpha/stdlib//Corelib.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a>} {<a id="6dd44bbb6d127d23cd8a8fba1e8cb9f9" class="idref" href="#6dd44bbb6d127d23cd8a8fba1e8cb9f9"><span class="id" title="binder">γ</span></a> : <a class="idref" href="AccInSProp.theories.SetModel.ZF_axioms.html#ZFSet"><span class="id" title="axiom">ZFSet</span></a>} : <a class="idref" href="AccInSProp.theories.SetModel.HO.html#d1a95a2e76ac66c2f44f5cd01aaa1d43"><span class="id" title="definition">𝕌</span></a><a class="idref" href="AccInSProp.theories.SetModel.HO.html#d1a95a2e76ac66c2f44f5cd01aaa1d43"><span class="id" title="definition">el</span></a> (<a class="idref" href="http://rocq-prover.org/doc/V9.2+alpha/stdlib//Corelib.Init.Datatypes.html#S"><span class="id" title="constructor">S</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#n:5"><span class="id" title="variable">n</span></a>) (<a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#univTy_HO"><span class="id" title="definition">univTy_HO</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#n:5"><span class="id" title="variable">n</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#6dd44bbb6d127d23cd8a8fba1e8cb9f9"><span class="id" title="variable">γ</span></a>) <a class="idref" href="AccInSProp.theories.SetModel.library.html#8f9238d4eefe0b5c60a6c98165047666"><span class="id" title="notation">≡</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO.html#a653974a5ab70e391e2244168af7f482"><span class="id" title="definition">𝕌</span></a> <a class="idref" href="AccInSProp.theories.SetModel.HO_univ.html#n:5"><span class="id" title="variable">n</span></a>.<br/>
+<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#f49c24648b1537c7a04ce284042e43a1"><span class="id" title="lemma">setPairβ1</span></a>.<br/>
+&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.HO.html#49c9ea64be61500085f4350a637dd55e"><span class="id" title="lemma">𝕌</span></a><a class="idref" href="AccInSProp.theories.SetModel.HO.html#49c9ea64be61500085f4350a637dd55e"><span class="id" title="lemma">_in_</span></a><a class="idref" href="AccInSProp.theories.SetModel.HO.html#49c9ea64be61500085f4350a637dd55e"><span class="id" title="lemma">𝕍</span></a>.<br/>
+&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#setMkPair_typing"><span class="id" title="lemma">setMkPair_typing</span></a>. <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_nat.html#three_typing"><span class="id" title="lemma">three_typing</span></a>. <span class="id" title="tactic">apply</span> <a class="idref" href="AccInSProp.theories.SetModel.ZF_library.html#empty_in_univ"><span class="id" title="lemma">empty_in_univ</span></a>.<br/>
+<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+</div>
+</div>
+
+<div id="footer">
+<hr/><a href="indexpage.html">Index</a><hr/>This page has been generated by <a href="http://rocq-prover.org/">coqdoc</a>
+</div>
+
+</div>
+
+</body>
+</html>
