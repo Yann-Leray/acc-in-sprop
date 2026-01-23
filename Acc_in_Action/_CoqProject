@@ -1,0 +1,18 @@
+-R . SystemF
+
+-arg -allow-rewrite-rules
+
+ComputeEq.v
+Sigma.v
+sum.v
+Observational.v
+Acc.v
+Logic.v
+Arith.v
+List.v
+gcd.v
+Substitution.v
+Confluence.v
+SystemF_sprop.v
+gcd_Prop.v
+SystemF_prop.v
