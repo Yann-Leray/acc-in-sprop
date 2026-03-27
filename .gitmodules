@@ -1,0 +1,7 @@
+[submodule "rocq-prototype"]
+	path = rocq-prototype
+	url = https://github.com/Yann-Leray/coq.git
+[submodule "rocq-formalisation"]
+	path = rocq-formalisation
+	url = https://github.com/thiagofelicissimo/acc-in-sprop
+	branch = main
