@@ -5,7 +5,7 @@ This artifact is split in three components:
 - rocq-prototype points to a fork of The Rocq Prover, with support for rewrite rules that can be enabled in proof terms only.
   Its README is at the root, and redirects to INSTALL.md (also at the root) for installation guidance.
 - Acc_in_Action contains examples to test the prototype on.
-- rocq-formalisation points to a Rocq development which formalises the equivalence between T≡ and T= as extensions of CICobs.
+- rocq-formalisation points to a Rocq development which formalises the different theorems and proofs contained in the article.
   It was written with Rocq 9.0.1, the libraries it requires are listed in its README (at the root).
 
 ## Prototype
