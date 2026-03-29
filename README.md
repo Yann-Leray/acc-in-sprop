@@ -2,43 +2,14 @@
 
 This artifact is split in three components:
 
-- rocq-prototype contains a fork of The Rocq Prover, with support for rewrite rules that can be enabled in proof terms only.
+- rocq-prototype points to a fork of The Rocq Prover, with support for rewrite rules that can be enabled in proof terms only.
   Its README is at the root, and redirects to INSTALL.md (also at the root) for installation guidance.
 - Acc_in_Action contains examples to test the prototype on.
-- rocq-formalisation is a Rocq development which formalises the equivalence between T≡ and T= as extensions of CICobs.
+- rocq-formalisation points to a Rocq development which formalises the equivalence between T≡ and T= as extensions of CICobs.
   It was written with Rocq 9.0.1, the libraries it requires are listed in its README (at the root).
 
-## Formalisation
-
-(extracted from [its README.md file](rocq-formalisation/README.md))
-
-This repository contains the formalization of most proofs given in the paper.
-
-[See the rendered Rocq code, with comments.](https://yann-leray.github.io/acc-in-sprop)
-
-### Building
-
-You need the the Rocq Prover 9.0.1 and Autosubst 2 OCaml (needs ocaml<5, recommended 4.14.2).
-Note that the prototype does not provide a version of Rocq suitable for compiling the formalisation.
-You can install
-them using
-```sh
-opam repo add rocq-released https://rocq-prover.org/opam/released
-opam install --deps-only .
-```
-(there will be warnings about the opam file that can be safely ignored)
-
-Then to verify the proof, just use `make`:
-```sh
-make autosubst
-make   # you may add -j JOBS to compile faster
-```
-
-For the overview of all files in the formalisation, go to [the README in the folder](rocq-formalisation/README.md)
-
-
 ## Prototype
-(extracted from [its INSTALL.md file](rocq-prototype/README.md))
+(extracted from [its INSTALL.md file](https://github.com/Yann-Leray/coq/blob/artifact-lics26/INSTALL.md))
 
 To install and use this fork of Rocq, we recommend using the opam package manager.
 To install Rocq in an OPAM switch, follow these instructions:
@@ -99,3 +70,9 @@ Otherwise, for rocq or rocqide, simply pass the flag to the command line.
 For VSCode integration, there should be an "args" setting in the extension to pass additional command-line arguments.
 For Proof General, there should be a variable called PG-prog-args to pass the flag (not tested).
 In any case, ensure you are using the prototype and not falling back to another installation of Rocq.
+
+
+## Formalisation
+
+The formalisation is contained in the repository linked in submodule [rocq-formalisation](https://github.com/thiagofelicissimo/acc-in-sprop).
+Details on how to compile it or how to browse its theorems online are available [in its README file](https://github.com/thiagofelicissimo/acc-in-sprop/blob/main/README.md).
